@@ -16,6 +16,9 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
+![image](https://github.com/user-attachments/assets/16ce842c-4b02-44c7-bff2-7ac406baceff)
+
+
 **Logic Diagram**
 
 **Procedure**
@@ -35,7 +38,18 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+```
+module exp2booleanfunctionminimization(a,b,c,d,f1,w,x,y,z,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+assign f1=((~b&~d)|(~a&b&d)|(a&b&~c));
+assign f2=((~y&z)|(x&y)|(w&y));
+endmodule 
+```
+
+Developed by:C.R.DEEPAKK
+
+RegisterNumber:24007006
 
 
 **RTL realization**
@@ -44,7 +58,12 @@ Developed by: RegisterNumber:*/
 
 **RTL**
 
+![image](https://github.com/user-attachments/assets/5a28e311-7196-41c5-826e-cf6cdd0f69d4)
+
 **Timing Diagram**
+
+![image](https://github.com/user-attachments/assets/92dc24bc-246f-49ae-a085-0264468fa873)
+
 
 **Result:**
 
